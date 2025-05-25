@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Introducing PrintMatrix Label Maker for Mac</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="Generator" content="Hazel Knowledge Base Builder - 2.0.4.0">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style type=text/css>
+.Cb1184f6d25de4d1597db8d549a9c22e0{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C83a2a217261f4e2e8709dff474b3f1da{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+.Cd7ca051d5a934bb6a51c26e877301b20{
+display:block;
+margin:auto;
+}
+.C8e77e59194d04ba892c732bcc96045e7{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C9f89f621680a4c87824dbfd661c80c72{
+display:block;
+margin:auto;
+}
+.C2767a6bc57dd4baeaab3cc7654b3ff27{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C24b0e8739d4e49e18874af216a05df43{
+display:block;
+margin:auto;
+}
+.C111770f3195c42c7bc0efa5e3e05c3b3{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C512f10f0cc674e69b0df0c3191a88892{
+display:block;
+margin:auto;
+}
+.C6c92631ef83f4377a1b275464b4e815d{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C68fc10bcd5af4ca1ad1c5f9d317fad6f{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+.C4d6adbe2141848ab842938de2b0ef935{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C63a332feb1aa41c7b935a94ea526ef44{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+@media screen and (max-width:450px) {
+.C83a2a217261f4e2e8709dff474b3f1da{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+#Cd7ca051d5a934bb6a51c26e877301b20{
+cursor: pointer;
+transition: 0.3s;
+}
+#Cd7ca051d5a934bb6a51c26e877301b20:hover {opacity: 0.7;}
+.modal {
+display: none;
+position: fixed;
+z-index: 99999;
+padding-top: 40px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+#myModal_Cd7ca051d5a934bb6a51c26e877301b20 .modal-content {
+margin: auto;
+display: block;
+width:63%;
+}
+#caption_Cd7ca051d5a934bb6a51c26e877301b20{
+margin: auto;
+display: block;
+width: 75%;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 40px;
+}
+.modal-content, #caption {
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+@keyframes zoom
+{
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+.close_Cd7ca051d5a934bb6a51c26e877301b20{
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+z-index:99999;
+}
+.close_Cd7ca051d5a934bb6a51c26e877301b20:hover, .close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+@media only screen and(max-width: 700px)
+{
+.modal-content {
+width: 100%;
+}
+}
+#C9f89f621680a4c87824dbfd661c80c72{
+cursor: pointer;
+transition: 0.3s;
+}
+#C9f89f621680a4c87824dbfd661c80c72:hover {opacity: 0.7;}
+.modal {
+display: none;
+position: fixed;
+z-index: 99999;
+padding-top: 40px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+#myModal_C9f89f621680a4c87824dbfd661c80c72 .modal-content {
+margin: auto;
+display: block;
+width:63%;
+}
+#caption_C9f89f621680a4c87824dbfd661c80c72{
+margin: auto;
+display: block;
+width: 75%;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 40px;
+}
+.modal-content, #caption {
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+@keyframes zoom
+{
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+.close_C9f89f621680a4c87824dbfd661c80c72{
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+z-index:99999;
+}
+.close_C9f89f621680a4c87824dbfd661c80c72:hover, .close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+@media only screen and(max-width: 700px)
+{
+.modal-content {
+width: 100%;
+}
+}
+#C24b0e8739d4e49e18874af216a05df43{
+cursor: pointer;
+transition: 0.3s;
+}
+#C24b0e8739d4e49e18874af216a05df43:hover {opacity: 0.7;}
+.modal {
+display: none;
+position: fixed;
+z-index: 99999;
+padding-top: 40px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+#myModal_C24b0e8739d4e49e18874af216a05df43 .modal-content {
+margin: auto;
+display: block;
+width:63%;
+}
+#caption_C24b0e8739d4e49e18874af216a05df43{
+margin: auto;
+display: block;
+width: 75%;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 40px;
+}
+.modal-content, #caption {
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+@keyframes zoom
+{
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+.close_C24b0e8739d4e49e18874af216a05df43{
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+z-index:99999;
+}
+.close_C24b0e8739d4e49e18874af216a05df43:hover, .close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+@media only screen and(max-width: 700px)
+{
+.modal-content {
+width: 100%;
+}
+}
+#C512f10f0cc674e69b0df0c3191a88892{
+cursor: pointer;
+transition: 0.3s;
+}
+#C512f10f0cc674e69b0df0c3191a88892:hover {opacity: 0.7;}
+.modal {
+display: none;
+position: fixed;
+z-index: 99999;
+padding-top: 40px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+#myModal_C512f10f0cc674e69b0df0c3191a88892 .modal-content {
+margin: auto;
+display: block;
+width:63%;
+}
+#caption_C512f10f0cc674e69b0df0c3191a88892{
+margin: auto;
+display: block;
+width: 75%;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 40px;
+}
+.modal-content, #caption {
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+@keyframes zoom
+{
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+.close_C512f10f0cc674e69b0df0c3191a88892{
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+z-index:99999;
+}
+.close_C512f10f0cc674e69b0df0c3191a88892:hover, .close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+@media only screen and(max-width: 700px)
+{
+.modal-content {
+width: 100%;
+}
+}
+@media screen and (max-width:450px) {
+.C68fc10bcd5af4ca1ad1c5f9d317fad6f{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+@media screen and (max-width:450px) {
+.C63a332feb1aa41c7b935a94ea526ef44{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+br {line-height:10px;height:10px;}
+.input {
+        font-size: 16px;
+        padding: 10px 10px 10px 20px;
+        border: 1px solid #ddd;
+        }
+
+        .searchSection{
+        padding-left:10%;
+        padding-right:10%;
+        padding-top:20px;
+        padding-bottom:50px;
+        margin-left:0%;
+        margin-right:0%;
+        margin-top:50px;
+        margin-bottom:50px;
+        }
+
+        .searchBar{
+        width: 90%;
+        margin-top:50px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+        }
+
+       
+        .navigationPath{
+        padding-left:10%;
+        padding-right:10%;
+        width:90%;
+        margin:auto;
+        padding-bottom:40px;
+        }
+
+        @media screen and (max-width:450px) {
+            .navigationPath{
+                min-width:380px;
+                margin-left:0;
+                margin-right:0;
+                padding-left:30px;
+                padding-right:30px;
+            }
+        }
+
+	.card{margin:10px;min-height:250px;}
+	.summaryListings{width:90%;}
+    .customBadge{margin-top:20px;padding:5px;}
+    .card-link{color:black;}
+    
+
+</style>
+<style>
+.navbar .navbar-expand-lg{
+padding:0;
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8{
+background-color:rgba(79,79,79,1);
+padding:0;
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-nav .nav-link{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+padding-left:10px;
+}
+.nav-link{
+padding:1rem;
+background-color:transparent;
+}
+.navbar-toggler{
+padding:1rem;
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-nav .nav-link:focus,.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-nav .nav-link:hover{
+color:rgba(0,0,0,1) !important;
+background-color:rgba(255,252,251,1);
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-brand{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+font-family:"Titillium Web";
+font-size:20px;
+padding-left:0.5rem;
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .nav-item{
+background-color:transparent;
+}
+.custom_navbar_icon{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-brand:focus,.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-brand:hover{
+color:rgba(255,255,255,0.97);
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .dropdown-menu{
+background-color:rgba(79,79,79,1);
+padding:0;
+margin:0;
+}
+.dropdown-toggle:after{
+color:rgba(255,255,255,0.97);
+}
+.dropdown, .dropup{
+color:rgba(255,255,255,0.97);
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 .navbar-toggler-icon{
+background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.97)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar_C9d1c8afa20ce4cc3934aec92d055e5d8.navbar.navbar-expand-lg{
+-webkit-box-shadow: 0 4px 4px -4px #999;
+-moz-box-shadow: 0 4px 4px -4px #999;
+box-shadow: 0 4px 4px -4px #999;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Titillium+Web|&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+
+<body style='max-width:1200px;margin:auto;'>
+<div style="background-color:rgba(79,79,79,1);">
+<div style="padding-left:5%;padding-right:5%;padding-top:20px;">
+<div class="col-12">
+<nav class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 navbar navbar-expand-lg">
+<a class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 navbar-brand" href="index.html">PrintMatrix Label Maker</a>
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_C9d1c8afa20ce4cc3934aec92d055e5d8">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8" class="collapse navbar-collapse">
+<ul class="navbar-nav mx-auto">
+<li class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 nav-item"><a class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 nav-link" href="https://apps.apple.com/us/app/printmatrix/id6445904972" target=_self>Download for Mac</a>
+<li class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 nav-item"><a class="navbar_C9d1c8afa20ce4cc3934aec92d055e5d8 nav-link" href="https://printmatrix.aidaluu.com/Support.html" target=_self>Support</a>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="searchSection" style="margin: auto;">
+    <div class="input-group searchBar">
+      <input type="text" class="input form-control" placeholder="Search" onkeydown="search(this)">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" onclick="performSearch()">
+          <i class="fa fa-search"></i>
+        </button>
+       </div>
+      </div>
+    <div class="searchResult" style="width: 90%;margin-left: auto;margin-right: auto;"></div>
+  </div><div class='navigationPath'><small><a href='index.html'>PrintMatrix Label Maker</a> / <a href='category2_Gettingstarted.html'>Getting started</a> / Introducing PrintMatrix Label Maker for Mac</small></div>
+
+<div class="C83a2a217261f4e2e8709dff474b3f1da">
+<h1>Introducing PrintMatrix Label Maker for Mac</h1><div class="C258cc5c9e3d845a48edf1ece5f222b37">
+<div style="text-align:left;">
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">PrintMatrix is an advanced label designer with support for mail merge, data import, automation tags and bulk label generations.<br>
+<br>
+Download PrintMatrix from the Mac App Store: <br>
+<a target='_blank' href='https://apps.apple.com/us/app/printmatrix/id6445904972'>https://apps.apple.com/us/app/printmatrix/id6445904972</a><br>
+<br>
+</span><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);font-weight:bold;">Feature overview:<br>
+</span>
+<ul>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Choose from hundreds of label sizes and shapes</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Intuitive user interface that mimics the layout of actual label sheets, so you can directly type into the label location you wish to print to</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Print single labels, partial sheets or full sheets with flexible options</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Generate and print hundreds of labels in minutes using mail merge</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Import data from CSV files and create labels in bulk</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Add dynamic and personalized content to your labels using automation tags for sequential numbers, dates, timestamps, random numbers and unique identifiers</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Print label layout grids to blank sheets for easy alignment</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Save your labels so you can edit and reprint them anytime</span></li>
+
+</ul>
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);"><br>
+</span><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);font-weight:bold;">Secure and offline-friendly<br>
+</span><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Unlike other apps that require you to upload your data to third-party servers, this app runs locally on your device. Your data is never shared or processed by anyone else. You can use all the features of the app even when you are offline.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="row C68fc10bcd5af4ca1ad1c5f9d317fad6f">
+
+<div class="C8e77e59194d04ba892c732bcc96045e7 col-xs-12 col-sm-3">
+<img src="form1_media/screenshot_2880x1800_20240223_092952.png" id="Cd7ca051d5a934bb6a51c26e877301b20"  class="img-thumbnail img-fluid Cd7ca051d5a934bb6a51c26e877301b20">
+<div id = "myModal_Cd7ca051d5a934bb6a51c26e877301b20" class="modal">
+<span class="close_Cd7ca051d5a934bb6a51c26e877301b20">&times;</span>
+<img class="modal-content" id="myImage_Cd7ca051d5a934bb6a51c26e877301b20">
+<div id = "caption_Cd7ca051d5a934bb6a51c26e877301b20"></div>
+</div>
+
+</div>
+
+<div class="C2767a6bc57dd4baeaab3cc7654b3ff27 col-xs-12 col-sm-3">
+<img src="form1_media/screenshot_2880x1800_20240223_094023.png" id="C9f89f621680a4c87824dbfd661c80c72"  class="img-thumbnail img-fluid C9f89f621680a4c87824dbfd661c80c72">
+<div id = "myModal_C9f89f621680a4c87824dbfd661c80c72" class="modal">
+<span class="close_C9f89f621680a4c87824dbfd661c80c72">&times;</span>
+<img class="modal-content" id="myImage_C9f89f621680a4c87824dbfd661c80c72">
+<div id = "caption_C9f89f621680a4c87824dbfd661c80c72"></div>
+</div>
+
+</div>
+
+<div class="C111770f3195c42c7bc0efa5e3e05c3b3 col-xs-12 col-sm-3">
+<img src="form1_media/screenshot_2880x1800_20240223_095000.png" id="C24b0e8739d4e49e18874af216a05df43"  class="img-thumbnail img-fluid C24b0e8739d4e49e18874af216a05df43">
+<div id = "myModal_C24b0e8739d4e49e18874af216a05df43" class="modal">
+<span class="close_C24b0e8739d4e49e18874af216a05df43">&times;</span>
+<img class="modal-content" id="myImage_C24b0e8739d4e49e18874af216a05df43">
+<div id = "caption_C24b0e8739d4e49e18874af216a05df43"></div>
+</div>
+
+</div>
+
+<div class="C6c92631ef83f4377a1b275464b4e815d col-xs-12 col-sm-3">
+<img src="form1_media/screenshot_2880x1800_20240223_095714.png" id="C512f10f0cc674e69b0df0c3191a88892"  class="img-thumbnail img-fluid C512f10f0cc674e69b0df0c3191a88892">
+<div id = "myModal_C512f10f0cc674e69b0df0c3191a88892" class="modal">
+<span class="close_C512f10f0cc674e69b0df0c3191a88892">&times;</span>
+<img class="modal-content" id="myImage_C512f10f0cc674e69b0df0c3191a88892">
+<div id = "caption_C512f10f0cc674e69b0df0c3191a88892"></div>
+</div>
+
+</div>
+
+</div>
+
+<div class="C63a332feb1aa41c7b935a94ea526ef44">
+
+</div>
+
+<div style="text-align:right;margin-left:50px;margin-right:50px;margin-top:200px;margin-bottom:100px;">
+<a href='https://aidaluu.com'>More Apps From Us</a></div>
+
+</body>
+</html>
+
+<script>
+var modal_Cd7ca051d5a934bb6a51c26e877301b20 = document.getElementById('myModal_Cd7ca051d5a934bb6a51c26e877301b20');
+var img_Cd7ca051d5a934bb6a51c26e877301b20= document.getElementById('Cd7ca051d5a934bb6a51c26e877301b20');
+var modalImg_Cd7ca051d5a934bb6a51c26e877301b20 = document.getElementById("myImage_Cd7ca051d5a934bb6a51c26e877301b20");
+var captionText_Cd7ca051d5a934bb6a51c26e877301b20= document.getElementById("caption_Cd7ca051d5a934bb6a51c26e877301b20");
+img_Cd7ca051d5a934bb6a51c26e877301b20.onclick = function(){
+modal_Cd7ca051d5a934bb6a51c26e877301b20.style.display = "block";
+modalImg_Cd7ca051d5a934bb6a51c26e877301b20.src = this.src;
+}
+var span_Cd7ca051d5a934bb6a51c26e877301b20 = document.getElementsByClassName("close_Cd7ca051d5a934bb6a51c26e877301b20")[0];
+span_Cd7ca051d5a934bb6a51c26e877301b20.onclick = function() {
+modal_Cd7ca051d5a934bb6a51c26e877301b20.style.display = "none";
+}
+var modal_C9f89f621680a4c87824dbfd661c80c72 = document.getElementById('myModal_C9f89f621680a4c87824dbfd661c80c72');
+var img_C9f89f621680a4c87824dbfd661c80c72= document.getElementById('C9f89f621680a4c87824dbfd661c80c72');
+var modalImg_C9f89f621680a4c87824dbfd661c80c72 = document.getElementById("myImage_C9f89f621680a4c87824dbfd661c80c72");
+var captionText_C9f89f621680a4c87824dbfd661c80c72= document.getElementById("caption_C9f89f621680a4c87824dbfd661c80c72");
+img_C9f89f621680a4c87824dbfd661c80c72.onclick = function(){
+modal_C9f89f621680a4c87824dbfd661c80c72.style.display = "block";
+modalImg_C9f89f621680a4c87824dbfd661c80c72.src = this.src;
+}
+var span_C9f89f621680a4c87824dbfd661c80c72 = document.getElementsByClassName("close_C9f89f621680a4c87824dbfd661c80c72")[0];
+span_C9f89f621680a4c87824dbfd661c80c72.onclick = function() {
+modal_C9f89f621680a4c87824dbfd661c80c72.style.display = "none";
+}
+var modal_C24b0e8739d4e49e18874af216a05df43 = document.getElementById('myModal_C24b0e8739d4e49e18874af216a05df43');
+var img_C24b0e8739d4e49e18874af216a05df43= document.getElementById('C24b0e8739d4e49e18874af216a05df43');
+var modalImg_C24b0e8739d4e49e18874af216a05df43 = document.getElementById("myImage_C24b0e8739d4e49e18874af216a05df43");
+var captionText_C24b0e8739d4e49e18874af216a05df43= document.getElementById("caption_C24b0e8739d4e49e18874af216a05df43");
+img_C24b0e8739d4e49e18874af216a05df43.onclick = function(){
+modal_C24b0e8739d4e49e18874af216a05df43.style.display = "block";
+modalImg_C24b0e8739d4e49e18874af216a05df43.src = this.src;
+}
+var span_C24b0e8739d4e49e18874af216a05df43 = document.getElementsByClassName("close_C24b0e8739d4e49e18874af216a05df43")[0];
+span_C24b0e8739d4e49e18874af216a05df43.onclick = function() {
+modal_C24b0e8739d4e49e18874af216a05df43.style.display = "none";
+}
+var modal_C512f10f0cc674e69b0df0c3191a88892 = document.getElementById('myModal_C512f10f0cc674e69b0df0c3191a88892');
+var img_C512f10f0cc674e69b0df0c3191a88892= document.getElementById('C512f10f0cc674e69b0df0c3191a88892');
+var modalImg_C512f10f0cc674e69b0df0c3191a88892 = document.getElementById("myImage_C512f10f0cc674e69b0df0c3191a88892");
+var captionText_C512f10f0cc674e69b0df0c3191a88892= document.getElementById("caption_C512f10f0cc674e69b0df0c3191a88892");
+img_C512f10f0cc674e69b0df0c3191a88892.onclick = function(){
+modal_C512f10f0cc674e69b0df0c3191a88892.style.display = "block";
+modalImg_C512f10f0cc674e69b0df0c3191a88892.src = this.src;
+}
+var span_C512f10f0cc674e69b0df0c3191a88892 = document.getElementsByClassName("close_C512f10f0cc674e69b0df0c3191a88892")[0];
+span_C512f10f0cc674e69b0df0c3191a88892.onclick = function() {
+modal_C512f10f0cc674e69b0df0c3191a88892.style.display = "none";
+}
+
+</script>
+
+
+<script src="searchArticles.js"></script>

@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>How to save and reopen saved labels</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="Generator" content="Hazel Knowledge Base Builder - 2.0.4.0">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style type=text/css>
+.Cb1184f6d25de4d1597db8d549a9c22e0{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C83a2a217261f4e2e8709dff474b3f1da{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+.C8e77e59194d04ba892c732bcc96045e7{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C2767a6bc57dd4baeaab3cc7654b3ff27{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C111770f3195c42c7bc0efa5e3e05c3b3{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C6c92631ef83f4377a1b275464b4e815d{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C68fc10bcd5af4ca1ad1c5f9d317fad6f{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+.C4d6adbe2141848ab842938de2b0ef935{
+padding-left:10px;
+padding-right:10px;
+padding-top:0px;
+padding-bottom:0px;
+}
+.C63a332feb1aa41c7b935a94ea526ef44{
+padding-left:15%;
+padding-right:15%;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:0%;
+margin-right:0%;
+}
+@media screen and (max-width:450px) {
+.C83a2a217261f4e2e8709dff474b3f1da{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+@media screen and (max-width:450px) {
+.C68fc10bcd5af4ca1ad1c5f9d317fad6f{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+@media screen and (max-width:450px) {
+.C63a332feb1aa41c7b935a94ea526ef44{
+min-width:380px;
+margin-left:0;
+margin-right:0;
+padding-left:30px;
+padding-right:30px;
+}
+}
+br {line-height:10px;height:10px;}
+.input {
+        font-size: 16px;
+        padding: 10px 10px 10px 20px;
+        border: 1px solid #ddd;
+        }
+
+        .searchSection{
+        padding-left:10%;
+        padding-right:10%;
+        padding-top:20px;
+        padding-bottom:50px;
+        margin-left:0%;
+        margin-right:0%;
+        margin-top:50px;
+        margin-bottom:50px;
+        }
+
+        .searchBar{
+        width: 90%;
+        margin-top:50px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+        }
+
+       
+        .navigationPath{
+        padding-left:10%;
+        padding-right:10%;
+        width:90%;
+        margin:auto;
+        padding-bottom:40px;
+        }
+
+        @media screen and (max-width:450px) {
+            .navigationPath{
+                min-width:380px;
+                margin-left:0;
+                margin-right:0;
+                padding-left:30px;
+                padding-right:30px;
+            }
+        }
+
+	.card{margin:10px;min-height:250px;}
+	.summaryListings{width:90%;}
+    .customBadge{margin-top:20px;padding:5px;}
+    .card-link{color:black;}
+    
+
+</style>
+<style>
+.navbar .navbar-expand-lg{
+padding:0;
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6{
+background-color:rgba(79,79,79,1);
+padding:0;
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-nav .nav-link{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+padding-left:10px;
+}
+.nav-link{
+padding:1rem;
+background-color:transparent;
+}
+.navbar-toggler{
+padding:1rem;
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-nav .nav-link:focus,.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-nav .nav-link:hover{
+color:rgba(0,0,0,1) !important;
+background-color:rgba(255,252,251,1);
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-brand{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+font-family:"Titillium Web";
+font-size:20px;
+padding-left:0.5rem;
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .nav-item{
+background-color:transparent;
+}
+.custom_navbar_icon{
+color:rgba(255,255,255,0.97);
+background-color:transparent;
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-brand:focus,.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-brand:hover{
+color:rgba(255,255,255,0.97);
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .dropdown-menu{
+background-color:rgba(79,79,79,1);
+padding:0;
+margin:0;
+}
+.dropdown-toggle:after{
+color:rgba(255,255,255,0.97);
+}
+.dropdown, .dropup{
+color:rgba(255,255,255,0.97);
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 .navbar-toggler-icon{
+background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.97)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6.navbar.navbar-expand-lg{
+-webkit-box-shadow: 0 4px 4px -4px #999;
+-moz-box-shadow: 0 4px 4px -4px #999;
+box-shadow: 0 4px 4px -4px #999;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Titillium+Web|&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+
+<body style='max-width:1200px;margin:auto;'>
+<div style="background-color:rgba(79,79,79,1);">
+<div style="padding-left:5%;padding-right:5%;padding-top:20px;">
+<div class="col-12">
+<nav class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 navbar navbar-expand-lg">
+<a class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 navbar-brand" href="index.html">PrintMatrix Label Maker</a>
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6" class="collapse navbar-collapse">
+<ul class="navbar-nav mx-auto">
+<li class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 nav-item"><a class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 nav-link" href="https://apps.apple.com/us/app/printmatrix/id6445904972" target=_self>Download for Mac</a>
+<li class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 nav-item"><a class="navbar_C8ec9d7eaae6e4326b3e459b4fbfa41e6 nav-link" href="https://printmatrix.aidaluu.com/Support.html" target=_self>Support</a>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="searchSection" style="margin: auto;">
+    <div class="input-group searchBar">
+      <input type="text" class="input form-control" placeholder="Search" onkeydown="search(this)">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button" onclick="performSearch()">
+          <i class="fa fa-search"></i>
+        </button>
+       </div>
+      </div>
+    <div class="searchResult" style="width: 90%;margin-left: auto;margin-right: auto;"></div>
+  </div><div class='navigationPath'><small><a href='index.html'>PrintMatrix Label Maker</a> / <a href='category2_Gettingstarted.html'>Getting started</a> / How to save and reopen saved labels</small></div>
+
+<div class="C83a2a217261f4e2e8709dff474b3f1da">
+<h1>How to save and reopen saved labels</h1><div class="C258cc5c9e3d845a48edf1ece5f222b37">
+<div style="text-align:left;">
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Save labels:<br>
+</span>
+<ul>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Go to File Menu and select "Save"</span></li>
+
+</ul>
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Open saved labels:<br>
+</span>
+<ul>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Go File Menu and select "Open"</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Select and open saved file</span></li>
+
+</ul>
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">File format:<br>
+</span>
+<ul>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">PrintMatrix saves files with "</span><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);font-weight:bold;">printmatrix</span><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">" extension</span></li>
+
+</ul>
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Share saved label designs:<br>
+</span>
+<ul>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Email saved file as attachment</span></li>
+
+<li style="color:rgba(0,0,0,1);"><span style ="font-size: 13.5pt;color:rgba(0,0,0,1);">Double click on any saved file to launch</span></li>
+
+</ul>
+<span style ="font-size: 13.5pt;color:rgba(0,0,0,1);"><br>
+</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="row C68fc10bcd5af4ca1ad1c5f9d317fad6f">
+
+<div class="C8e77e59194d04ba892c732bcc96045e7 col-xs-12 col-sm-3">
+
+</div>
+
+<div class="C2767a6bc57dd4baeaab3cc7654b3ff27 col-xs-12 col-sm-3">
+
+</div>
+
+<div class="C111770f3195c42c7bc0efa5e3e05c3b3 col-xs-12 col-sm-3">
+
+</div>
+
+<div class="C6c92631ef83f4377a1b275464b4e815d col-xs-12 col-sm-3">
+
+</div>
+
+</div>
+
+<div class="C63a332feb1aa41c7b935a94ea526ef44">
+
+</div>
+
+<div style="text-align:right;margin-left:50px;margin-right:50px;margin-top:200px;margin-bottom:100px;">
+<a href='https://aidaluu.com'>More Apps From Us</a></div>
+
+</body>
+</html>
+
+<script>
+
+</script>
+
+
+<script src="searchArticles.js"></script>
